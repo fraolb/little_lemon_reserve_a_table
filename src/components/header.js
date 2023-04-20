@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 import Logo from "../images/Logo .svg";
 import "./header.css";
 
@@ -12,22 +13,22 @@ const Header = () => {
           <img src={Logo} />
         </li>
         <li className="hideSmall">
-          <a href="/home">Homepage</a>
+          <Link to="/">Homepage</Link>
         </li>
         <li className="hideSmall">
-          <a href="/about">About Us</a>
+          <Link to="/">About Us</Link>
         </li>
         <li className="hideSmall">
-          <a href="/blog">Menu</a>
+          <Link to="/">Menu</Link>
         </li>
         <li className="hideSmall">
-          <a href="/blog">Reservations</a>
+          <Link to="/reserveTable">Reservations</Link>
         </li>
         <li className="hideSmall">
-          <a href="/blog">Order Online</a>
+          <Link to="/">Order Online</Link>
         </li>
         <li className="hideSmall">
-          <a href="/blog">Login</a>
+          <Link to="/">Login</Link>
         </li>
       </ul>
       <span className="navBtn" onClick={() => setOpen(true)}>
@@ -40,10 +41,12 @@ const Header = () => {
           </a>
 
           <div className="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <Link to="/">Homepage</Link>
+            <Link to="/">About Us</Link>
+            <Link to="/">Menu</Link>
+            <Link to="/reserveTable">Reservations</Link>
+            <Link to="/">Order Online</Link>
+            <Link to="/">Login</Link>
           </div>
         </div>
       )}

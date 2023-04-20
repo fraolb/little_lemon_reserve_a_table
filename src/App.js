@@ -2,11 +2,22 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/header";
 import Main from "./main";
+import ReserveTable from "./reserveTable";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Main />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" >
+            <Route index element={<Main />} />
+            <Route path="reserveTable" element={<ReserveTable />} />
+            <Route path="contact" element={<Main />} />
+            <Route path="*" element={<Main />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

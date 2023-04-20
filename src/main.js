@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./main.css";
 import Pic from "./images/restauranfood.jpg";
 import Header from "./components/header";
@@ -19,7 +20,9 @@ const Main = () => {
             focused on traditional <br />
             recipes served with a modern <br /> twist.
           </p>
-          <button>Reserve a Table</button>
+          <Link to="/reserveTable">
+            <button>Reserve a Table</button>
+          </Link>
         </div>
         <div className="mainHeroRight">
           <img src={Pic} />
@@ -60,7 +63,7 @@ const Main = () => {
           <img src={Pic} className="aboutHotelImg2" />
         </div>
       </div>
-      <Footer /> 
+      <Footer />
     </div>
   );
 };
