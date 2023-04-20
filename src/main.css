@@ -1,0 +1,174 @@
+.mainHero {
+  padding: 20px;
+  padding-left: 14%;
+  padding-right: 14%;
+  background-color: var(--clr-primary-1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 360px;
+}
+
+.mainHeroLeft h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: var(--clr-primary-2);
+}
+.mainHeroLeft h3 {
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 5px;
+  color: white;
+}
+button {
+  background-color: var(--clr-primary-2);
+  padding: 10px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fdd804;
+}
+.mainHeroRight img {
+  position: relative;
+  top: 80px;
+  width: 320px;
+  height: 380px;
+  border-radius: 15px;
+}
+
+.specials {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+.specialsTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.specialsTitle h3 {
+  font-size: 40px;
+}
+.specialsTitle button {
+  margin-top: 45px;
+}
+.specialsBody {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial {
+  background-color: var(--clr-secondory-3);
+  height: 400px;
+  padding: 30px;
+  padding-left: 14%;
+  padding-right: 14%;
+}
+.testimonial h3 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  font-size: 40px;
+}
+.testimonialBody {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutHotel {
+  padding-left: 14%;
+  padding-right: 14%;
+  display: flex;
+  justify-content: space-between;
+  height: 550px;
+}
+
+.aboutHotel h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: var(--clr-primary-2);
+}
+.aboutHotel h3 {
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 5px;
+}
+.aboutHotelImg1 {
+  position: relative;
+  top: 200px;
+  left: 150px;
+  width: 270px;
+  height: 320px;
+  border-radius: 15px;
+}
+.aboutHotelImg2 {
+  position: relative;
+  top: 100px;
+  width: 270px;
+  height: 320px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .mainHero{
+    display: block;
+    height: auto;
+  }
+  .mainHeroRight{
+
+    display: flex;
+    align-items: center;
+  }
+  .mainHeroRight img{
+    width: 200px;
+    height: 250px;
+  }
+  .specials {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .specialsBody {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .testimonial {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .testimonialBody {
+    overflow: auto;
+    white-space: nowrap;
+    gap: 10px;
+  }
+  .aboutHotel {
+    display: block;
+    height: auto;
+  }
+  .aboutHotelLeft {
+    width: 100%;
+  }
+  .aboutHotelRight {
+    height: 300px;
+  }
+  .aboutHotelImg1 {
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 150px;
+    height: 180px;
+    border-radius: 15px;
+  }
+  .aboutHotelImg2 {
+    position: relative;
+    top: -90px;
+    width: 150px;
+    height: 180px;
+    border-radius: 15px;
+  }
+}

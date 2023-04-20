@@ -1,0 +1,24 @@
+.footer{
+    background-color: var(--clr-secondory-3);
+    height: 200px;
+    padding: 40px;
+    padding-left: 14%;
+    padding-right: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer img{
+    width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        display: grid;
+        grid-template-columns:  auto auto;
+        gap: 20px;
+        height: 400px;
+    }
+    .footer img{
+        margin-top: 100px;
+    }
+}

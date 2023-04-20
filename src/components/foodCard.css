@@ -1,0 +1,47 @@
+.foodCard{
+    width: 300px;
+    border-radius: 15px;
+    background-color: var(--clr-secondory-3);
+    margin: 5px;
+}
+.foodCard img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.foodNamePrice{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.foodName{
+    font-weight: bold;
+}
+.foodPrice{
+    font-weight: bold;
+    color: var(--clr-secondory-1);
+}
+.foodContent{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.foodDelivery{
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .foodCard{
+        display: inline-block;
+    }
+    .foodContent{
+        width: 220px;
+        display: inline-block;
+    }
+}
