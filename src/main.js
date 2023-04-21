@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./main.css";
 import Pic from "./images/restauranfood.jpg";
@@ -7,7 +7,19 @@ import FoodCard from "./components/foodCard";
 import TestimonialCard from "./components/testimonialCard";
 import Footer from "./components/footer";
 
+import Food1 from './images/greek salad.jpg'
+import Food2 from './images/bruchetta.svg'
+import Food3 from './images/lemon dessert.jpg'
+
 const Main = () => {
+  useEffect(()=>{
+    // const date = new Date();
+    // const availableTimes = fetchAPI(date);
+    // console.log(availableTimes);
+    // fetch('https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js')
+    //   .then(response => response.json())
+    //   .then(data => console.log(data));
+  })
   return (
     <div className="main">
       <Header />
@@ -16,8 +28,9 @@ const Main = () => {
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
           <p>
-            We are a family owned <br /> Mediterranean restaurant. <br />{" "}
-            focused on traditional <br />
+            
+            We are a family owned Mediterranean restaurant. <br />{" "}
+            focused on traditional 
             recipes served with a modern <br /> twist.
           </p>
           <Link to="/reserveTable">
@@ -53,8 +66,8 @@ const Main = () => {
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
           <p>
-            We are a family owned <br /> Mediterranean restaurant. <br />{" "}
-            focused on traditional <br />
+            We are a family owned  Mediterranean restaurant. <br />{" "}
+            focused on traditional 
             recipes served with a modern <br /> twist.
           </p>
         </div>

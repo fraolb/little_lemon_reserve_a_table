@@ -10,13 +10,12 @@ const Header = () => {
     <nav>
       <ul>
         <li>
-          <img src={Logo} />
+          <Link to="/">
+            <img src={Logo} />
+          </Link>
         </li>
         <li className="hideSmall">
-          <Link to="/">Homepage</Link>
-        </li>
-        <li className="hideSmall">
-          <Link to="/">About Us</Link>
+          <Link to="/aboutUs">About Us</Link>
         </li>
         <li className="hideSmall">
           <Link to="/">Menu</Link>
@@ -26,9 +25,6 @@ const Header = () => {
         </li>
         <li className="hideSmall">
           <Link to="/">Order Online</Link>
-        </li>
-        <li className="hideSmall">
-          <Link to="/">Login</Link>
         </li>
       </ul>
       <span className="navBtn" onClick={() => setOpen(true)}>
@@ -46,7 +42,6 @@ const Header = () => {
             <Link to="/">Menu</Link>
             <Link to="/reserveTable">Reservations</Link>
             <Link to="/">Order Online</Link>
-            <Link to="/">Login</Link>
           </div>
         </div>
       )}

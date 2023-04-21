@@ -1,0 +1,139 @@
+.reserveTableBody {
+  padding: 30px;
+  padding-left: 14%;
+  padding-right: 14%;
+  background-color: var(--clr-primary-1);
+  color: white;
+}
+.reserveTableBody h4 {
+  font-size: 25px;
+  padding-left: 15%;
+}
+.reserveTableImgContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.reserveTableImg {
+  width: 300px;
+  height: 250px;
+}
+.reserverForm {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 30px;
+}
+.formInputDate {
+  width: 215px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.formInput {
+  width: 250px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.formRadio {
+  font-size: 20pxf;
+}
+.formRadioTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.reserveTablePayment {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.paymentDescription {
+  height: 40px;
+  border-radius: 7px;
+  font-size: 17px;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.cardForm {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.cardInput {
+  height: 40px;
+  border-radius: 7px;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.cardDateCVV {
+  display: flex;
+  gap: 10px;
+}
+.containerCard div {
+  padding-left: 5px;
+}
+.cardInputDate {
+  width: 185px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.cardCVV {
+  width: 70px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.cardIconContainer {
+  margin-top: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  padding-left: 7px;
+  padding-right: 15px;
+  background-color: white;
+}
+.cardIcon {
+  width: 50px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .reserveTableImg {
+    width: 270px;
+    height: 200px;
+  }
+  .reserverForm {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .hiddenDot{
+    display: none;
+  }
+  .cardInputDate {
+    width: 105px;
+  }
+}

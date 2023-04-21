@@ -1,0 +1,14 @@
+.aboutUs{
+    background-color: var(--clr-secondory-3);
+    padding-left: 14%;
+    padding-right: 14%;
+}
+.aboutUs img{
+    width: auto;
+    height: 300px;
+}
+.imgContainer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
