@@ -2,16 +2,16 @@ import React from 'react'
 import './foodCard.css'
 import Pic from '../images/restauranfood.jpg'
 
-const FoodCard = () => {
+const FoodCard = (props) => {
   return (
     <div className='foodCard'>
-        <img src={Pic} />
+        <img src={props.data.img} />
         <div className='foodNamePrice'>
-            <div className='foodName'>Greek Salad</div>
-            <div className='foodPrice'>12$</div>
+            <div className='foodName'>{props.data.name}</div>
+            <div className='foodPrice'>{props.data.price}$</div>
         </div>
         <div className='foodContent'>
-            The famous cirsy lettuce. peppers and other shit in it.
+           {props.data.content}
         </div>
         <div className='foodDelivery'>
             Order Delivery

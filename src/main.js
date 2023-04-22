@@ -11,6 +11,45 @@ import Food1 from './images/greek salad.jpg'
 import Food2 from './images/bruchetta.svg'
 import Food3 from './images/lemon dessert.jpg'
 
+const foodMenu = [
+  {
+    img: Food1,
+    name: "Greek Salad",
+    price: 12.99,
+    content:"The famous greek salad of crispy lettuce, peppers, olivers and our chicago spices."
+  },
+  {
+    img: Food2,
+    name: "Bruchetta",
+    price: 7.99,
+    content:"Our Bruschetta is made from grilled bread that has been smeared with garlic."
+  },
+  {
+    img: Food3,
+    name: "Lemon Dessert",
+    price: 3.99,
+    content:"The famous dessert with a flavour of lemon, very sweet."
+  },
+]
+const testimonial =[
+  {
+    name:"Jhon Doe",
+    text:"Little Lemon is one of the best places for a data, and they have the best cheffs"
+  },
+  {
+    name:"Lukas D.",
+    text:"I have been in many restaurants, but none of them compare with little lemon, keep up guys!"
+  },
+  {
+    name:"Elsa Moor",
+    text:"Little Lemon is my favorite spot to hung out with my friends."
+  },
+  {
+    name:"Dave P.",
+    text:"If you ever been to Little Lemon, try the greek salad, that is soo addictive food. Love it!"
+  },
+]
+
 const Main = () => {
   useEffect(()=>{
     // const date = new Date();
@@ -47,18 +86,18 @@ const Main = () => {
           <button>Online Menu</button>
         </div>
         <div className="specialsBody">
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
+          {
+            foodMenu.map((i)=>(<FoodCard data={i} />))
+          }
+          
         </div>
       </div>
       <div className="testimonial">
         <h3>Testimonials</h3>
         <div className="testimonialBody">
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
+          {
+            testimonial.map((i)=>(<TestimonialCard data={i} />))
+          }
         </div>
       </div>
       <div className="aboutHotel">
